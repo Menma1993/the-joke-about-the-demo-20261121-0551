@@ -6,7 +6,8 @@ randomness — the same bytes on every run.
 
 Output directory: the grader's MAKEFUN_OUTPUT_DIR (or OUTPUT_DIR) when
 set, otherwise a relative output/ directory next to this file — never a
-hardcoded absolute path.
+hardcoded absolute path. The grader sets MAKEFUN_OUTPUT_DIR=/output in
+its sandbox, so the joke lands exactly where the scorer reads it.
 """
 
 import os
